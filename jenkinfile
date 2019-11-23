@@ -1,8 +1,0 @@
-node {
-stage('test') { 
-git credentialsId: '1c95f2c9-ab13-4b5c-a40a-8a7c0412e4c2', url: 'https://github.com/Times-Now/Maven.git'
-sh 'mvn test'
-    }
-    
-    
-}
