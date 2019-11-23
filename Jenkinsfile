@@ -11,13 +11,13 @@ pipeline {
     stage("Testing") {
       parallel {
         stage("Unit Tests") {
-          agent { docker 'openjdk:7-jdk-alpine' }
+          agent { docker 'tool name: 'java-1.8', type: 'jdk'' }
           steps {
             sh 'java -version'
           }
         }
         stage("Functional Tests") {
-          agent { docker 'openjdk:8-jdk-alpine' }
+          agent { docker 'tool name: 'java-1.8', type: 'jdk'' }
           steps {
             sh 'java -version'
           }
