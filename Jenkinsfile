@@ -21,7 +21,7 @@ node {
    }
    stage('Package') {
    
-    withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.1') {
+   withMaven(jdk: 'java-1.8', maven: 'maven-3.6.1') {
       sh 'mvn package'
     }
    }
