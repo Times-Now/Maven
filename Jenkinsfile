@@ -1,4 +1,4 @@
-ode {
+node {
    
    stage('Code checkout') { // for display purposes
      git credentialsId: 'GithubID', url: 'https://github.com/Fullmavencode/Maven.git'  
@@ -16,4 +16,3 @@ ode {
   
    }
    
-} 
