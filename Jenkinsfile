@@ -1,15 +1,15 @@
 ode {
    
    stage('Code checkout') { // for display purposes
-     git credentialsId: 'githubID', url: 'https://github.com/Fullmavencode/maven-examples.git'  
+     git credentialsId: 'GithubID', url: 'https://github.com/Fullmavencode/Maven.git'  
    }
    stage('Build') {
-    withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.1') {
+    withMaven(jdk: 'java-1.8', maven: ''maven-3.6.1') {
       sh 'mvn clean compile'
     } 
    }
    stage('Test') {
-    withMaven(jdk: 'JDK-1.8', maven: 'Maven-3.6.1') {
+    withMaven(jdk: 'java-1.8', maven: ''maven-3.6.1') {
       sh 'mvn test'
     }
    }
