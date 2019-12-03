@@ -13,6 +13,11 @@ node {
       sh 'mvn test'
     }
    }
+       stage('code analysis') {
+    withMaven(jdk: 'java-1.8', maven: 'maven-3.6.1') {
+      sh 'mvn sonar:sonar'
+    }
+   }
   
    }
    
