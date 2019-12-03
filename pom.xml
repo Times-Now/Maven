@@ -16,10 +16,10 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <junit.version>5.3.1</junit.version>
         <jacoco.version>0.8.2</jacoco.version>
-        <sonar.projectKey>Fullmavencode</sonar.projectKey>
-        <sonar.organization>fullmavencode</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.login>6bdcf75e74c1a6fd1cf05ed7944ea7b4ef7e84d0</sonar.login>    
+        <sonar.projectKey>Times-Now</sonar.projectKey>
+  <sonar.organization>timesnow</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  <sonar.login>92cbc0a61863758745a8ea32bc6b8f6d602db94a</sonar.login>
              
     </properties>
 
